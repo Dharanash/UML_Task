@@ -30,6 +30,39 @@ The PlantUML diagram outlines an online shopping system. Customers can register,
 
 The diagram showcases the basic flow of an online shopping system, from customers registering and browsing products to adding items to the cart, placing orders, and processing payments through a payment gateway.
 
+# Task 2: Construct a Use Case Diagram 
+
+**Objective:** Develop a detailed Use Case Diagram that illustrates the functionalities a Customer can perform within the Online Shopping System. 
+
+## Actors
+
+- Customer: The user who interacts with the Online Shopping System to perform various actions.
+
+## Use Cases
+
+1. **Browse Products**: The Customer can browse through the available products in the online store.
+2. **Search Products**: The Customer can search for specific products based on keywords or filters.
+3. **View Product Details**: The Customer can view detailed information about a selected product.
+4. **Add to Cart**: The Customer can add products to their shopping cart for purchasing.
+5. **View Cart**: The Customer can view the contents of their shopping cart.
+6. **Update Cart**: The Customer can modify the quantity or remove products from the shopping cart.
+7. **Proceed to Checkout**: The Customer can initiate the checkout process to purchase the products in the cart.
+8. **Provide Shipping Information**: The Customer enters shipping details during the checkout process.
+9. **Select Payment Method**: The Customer selects a preferred payment method for the order.
+10. **Make Payment**: The Customer makes a payment for the selected products.
+11. **Confirm Order**: The Customer confirms the order after reviewing the order details.
+12. **View Order History**: The Customer can view their past order history and details.
+13. **Track Order**: The Customer can track the status and shipping progress of an order.
+14. **Write Product Reviews**: The Customer can write reviews for products they have purchased.
+15. **Logout**: The Customer can log out from their account.
+
+## Relationships
+
+- The "Browse Products," "Search Products," and "View Product Details" use cases are related to each other, representing the process of exploring products.
+- The "Add to Cart," "View Cart," "Update Cart," "Proceed to Checkout," "Provide Shipping Information," "Select Payment Method," "Make Payment," and "Confirm Order" use cases form a sequence that represents the purchase process.
+- The "View Order History" and "Track Order" use cases are related to post-purchase activities.
+- The "Write Product Reviews" use case allows Customers to share feedback about purchased products.
+
 # Task 3: Develop a Sequence Diagram 
 **Objective:** Create a Sequence Diagram that details the sequence of interactions in the "Place Order" use case within the Online Shopping System. 
 
