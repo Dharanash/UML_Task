@@ -1,7 +1,8 @@
-                                                                                       # UMLpractice
+# UMLpractice
 
 # Task 1: Creating a Comprehensive Class Diagram
 The PlantUML diagram outlines an online shopping system. Customers can register, log in, update profiles, and place orders. They manage items in a cart, which connects to products. Each order includes items from the cart, and payments are processed via a PaymentGateway interface. This setup enables seamless shopping interactions
+
 **Classes:**
 
 - **Customer:** Represents a customer with attributes like id, name, email, password, and address. It has methods for registering, logging in, updating the profile, and placing orders.
