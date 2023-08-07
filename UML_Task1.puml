@@ -1,0 +1,76 @@
+@startuml Shopping
+!theme toy
+skinparam class {
+  BackgroundColor FloralWhite
+  BorderColor Black
+}
+
+class Customer #ffe1a3{
+  - id: int
+  - name: string
+  - email: string
+  - password: string
+  - address: string
+  + register()
+  + login()
+  + updateProfile()
+  + placeOrder()
+}
+
+class Product {
+  - pid: String
+  - name: string
+  - description: string
+  - price: double
+  + getProductDetails()
+}
+
+class Order {
+  - id: int
+  - pid: String 
+  - date: DateTime
+  - status: string
+  - items: List<Products>
+  + addProductToOrder()
+  + removeProductFromOrder()
+  + updateOrderStatus()
+
+}
+
+class Cart_Item {
+  - id: int
+  - pid: String
+  - quantity: int
+  + updateQuantity()
+}
+
+class Cart {
+  - id: int
+  - items: List<Cart_Item>
+  + addItem()
+  + removeItem()
+  + clearCart()
+  + placeOrder()
+}
+
+class Payment {
+  - id: int
+  - amount: double
+  - paymentMethod: string
+  + processPayment()
+}
+
+interface PaymentGateway {
+  + processPayment(amount: double, paymentMethod: string): boolean
+}
+
+Customer --|> Cart
+Cart --* "1" Cart_Item : contains
+Cart_Item --* Product : includes
+Customer --|> Order
+Order --* "1" Cart_Item : includes
+
+Order --|> Payment
+Payment ..> PaymentGateway : uses
+
+@enduml
