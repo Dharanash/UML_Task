@@ -1,0 +1,14 @@
+@startuml
+
+actor User
+participant "Online Shopping System" as OSS
+participant "Order" as Order
+participant "Payment" as Payment
+
+User -> OSS: Select items and Proceed to Checkout
+OSS -> Order: Create Order
+OSS -> Payment: Add Payment Details
+User -> OSS: Confirm Order
+OSS -> User: Order Confirmation
+
+@enduml
