@@ -1,0 +1,27 @@
+@startuml
+left to right direction
+actor "Customer" as fc
+rectangle  Online_Shopping_System {
+  usecase "Search products" as UC1
+  usecase "Payment" as UC2
+  usecase " Placing Order" as UC3
+  usecase "Adding Favourites" as UC4
+  usecase "Cancel Order" as UC5
+  usecase "Add to cart" as UC6
+}
+actor "Seller" as fc1
+rectangle  Online_Shopping_System {
+  usecase "Payment" as UC2
+  usecase " Placing Order" as UC3
+  usecase "Cancel Order" as UC5 
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+fc --> UC4
+fc --> UC5
+fc --> UC6
+fc1--> UC2
+fc1--> UC3
+fc1--> UC5
+@enduml
