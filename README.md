@@ -1,6 +1,7 @@
 # UMLpractice
 
 # Task 1: Creating a Comprehensive Class Diagram
+**Objective:** Create an in-depth Class Diagram for an Online Shopping System. 
 The PlantUML diagram outlines an online shopping system. Customers can register, log in, update profiles, and place orders. They manage items in a cart, which connects to products. Each order includes items from the cart, and payments are processed via a PaymentGateway interface. This setup enables seamless shopping interactions
 
 **Classes:**
@@ -28,3 +29,18 @@ The PlantUML diagram outlines an online shopping system. Customers can register,
 - Payment uses the PaymentGateway interface for processing payments.
 
 The diagram showcases the basic flow of an online shopping system, from customers registering and browsing products to adding items to the cart, placing orders, and processing payments through a payment gateway.
+
+# Task 3: Develop a Sequence Diagram 
+**Objective:** Create a Sequence Diagram that details the sequence of interactions in the "Place Order" use case within the Online Shopping System. 
+
+The provided PlantUML code illustrates a "Place Order" Sequence Diagram with the following interactions:
+
+1. The Customer, represented as an actor, adds items to their shopping cart and reviews the cart.
+2. The Shopping Cart creates an Order.
+3. The Order adds payment details and sends them to the Payment Gateway.
+4. The Payment Gateway processes the payment.
+5. The Order updates the Inventory System to reflect the purchase.
+6. The Inventory System confirms the inventory update.
+7. The Order sends an order confirmation to the Customer.
+
+   
